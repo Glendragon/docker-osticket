@@ -29,3 +29,11 @@ services:
     volumes:
       - /opt/volumes/osticket_mysql:/var/lib/mysql
     restart: always
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "443:443"
+    depends_on:
+      - osticket
+    restart: always 

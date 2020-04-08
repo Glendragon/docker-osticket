@@ -1,2 +1,5 @@
 # Ignore user specific IDEA settings
 .idea/
+
+nginx/cert.key
+nginx/cert.crt
